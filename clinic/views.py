@@ -8,7 +8,6 @@ class MascotaViewSet(viewsets.ModelViewSet):
     queryset = Mascota.objects.all().order_by('id')
     serializer_class = MascotaSerializer
 
-    # Ensure all responses are JSON (DRF does this by default)
 
 @api_view(['POST'])
 def dosis_total(request):
